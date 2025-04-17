@@ -1,0 +1,78 @@
+/* Reset default padding and margin for body and html to avoid overflow */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  /* Apply globally for all elements */
+}
+
+/* Ensure body covers full height */
+body {
+  min-height: 100vh;  /* Ensure the body takes the full viewport height */
+  display: flex;
+  flex-direction: column; /* Keep content below navbar in a column layout */
+}
+
+/* Styling the overall navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;  /* Ensure the navbar spans the entire width */
+  height: 50px;  /* Fixed height for the navbar */
+  padding: 0 20px;  /* Horizontal padding */
+  background-color: #333;  /* Dark background */
+  color: white;  /* White text color */
+  position: fixed;  /* Fix navbar at the top */
+  top: 0;  /* Keep it at the top of the page */
+  left: 0;  /* Align to the left edge */
+  z-index: 1000;  /* Ensure navbar stays on top */
+  overflow: visible;  /* Allow content to expand if needed */
+}
+
+/* Left section for the website name/logo */
+.navbar-left {
+  flex-grow: 1;  /* Ensure the left section takes available space */
+  display: flex;
+  align-items: center;
+}
+
+/* Styling the web name */
+.web-name {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;  /* White text color */
+  letter-spacing: 1px;  /* Optional: space between letters */
+  margin-left: 0;  /* Remove any margin if applied */
+}
+
+/* Right section for navigation links */
+.navbar-right {
+  display: flex;
+  align-items: center;  /* Align items vertically to center */
+  justify-content: space-between;
+  gap: 20px;  /* Space between the links */
+  flex-shrink: 0;  /* Prevent the right section from shrinking */
+}
+
+/* Styling for navigation links */
+.nav-link {
+  text-decoration: none;
+  color: white;  /* White text for the links */
+  font-size: 1.1em;  /* Font size for the links */
+  font-weight: bold;
+  transition: color 0.3s ease;  /* Smooth color transition on hover */
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  color: #4CAF50;  /* Green color when hovered */
+}
+
+/* Ensure content below the navbar does not get hidden */
+.content {
+  margin-top: 60px;  /* Push content down to avoid being covered by navbar */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;  /* Allow content to grow and fill available space */
+}
