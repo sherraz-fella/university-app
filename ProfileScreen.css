@@ -1,0 +1,132 @@
+/* src/screens/PersonalInfoScreen.css */
+.personal-info-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+    /* src/screens/AcademicInfoScreen.css */
+.academic-info-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+/* src/screens/FurtherInfoScreen.css */
+.further-info-container {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+  }
+  
+  
+  .form-container {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-picture-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile-picture-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+    border: 2px solid #ddd;
+  }
+  
+  .form-details {
+    margin-top: 20px;
+  }
+  
+  .name-fields {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .input-group {
+    width: 48%;
+  }
+  
+  .input-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .next-btn {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .skip-btn {
+    background-color: #FF5733;
+    color: white;
+  }
+    
+  .submit-btn {
+    background-color: #28a745;
+    color: white;
+  }
+    
+  .back-btn {
+    background-color: #FF5733;
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
