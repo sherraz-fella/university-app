@@ -1,0 +1,106 @@
+/* src/screens/HomeScreen.css */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* Full viewport height */
+  width: 100vw;   /* Full viewport width */
+  box-sizing: border-box;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #f4f4f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sections-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.section {
+  width: 30%;
+  height: 65vh;  /* 65% of the viewport height */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 3em;
+  color: #4CAF50;  /* Green color for icons */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.card-image {
+  width: 25%;  /* Adjust based on card width */
+  max-width: 100px; /* Prevents oversized images */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Ensures proper positioning */
+  margin: 0 auto 15px; /* Centers image & adds spacing */
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2)); /* Soft shadow for depth */
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+button:hover {
+  background-color: #45a049;
+}
